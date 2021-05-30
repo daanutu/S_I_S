@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Scuole in Sicurezza</title>
+</head>
+
+<body>
+
+
+
+    <div class="login">
+        <div class="login__content">
+            <div class="login__img">
+                
+                    <video autoplay muted loop>
+                        <source src="assets/img/coniglietto.mp4" type="video/mp4">
+                        Il tuo browser non supporta il tag video.
+                    </video>
+                
+            </div>
+
+            <div class="login__forms">
+                <form action="login.php" method="POST" class="login__registre" id="login-in">
+                    <h1 class="login__title">Accedi</h1>
+                    <img height="70px" width="155px" src="../Portale/assets/logo-black.png" alt="logo">
+
+                    <div class="login__box">
+                        <i class='bx bx-at login__icon'></i>
+                        <input type="text" placeholder="Email" class="login__input" name="email">
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-lock-alt login__icon'></i>
+                        <input type="password" placeholder="Password" class="login__input"  name="password">
+                    </div>
+
+                    <div align="center">
+                        <input class="login__button" type="submit" value="Accedi">
+                    </div>
+
+                    <div>
+                        <span class="login__account">Non hai un account ?</span>
+                        <br>
+                        <span class="login__signin" id="sign-up">Richiedi la registrazione!</span>
+                    </div>
+                </form>
+
+                <form action="register.php" method="POST" class="login__create none" id="login-up">
+                    <h1 class="login__title">Crea il tuo account</h1>
+                    <img height="70px" width="155px" src="../Portale/assets/logo-black.png" alt="logo">
+
+                    <div style="overflow-y: scroll; height: 250px;">
+
+                        <div class="login__box">
+                            <i class='bx bx-id-card login__icon'></i>
+                            <input type="text" placeholder="Nome" class="login__input" required name="nome" >
+                        </div>
+
+                        <div class="login__box">
+                            <i class=' bx bx-font-family login__icon'></i>
+                            <input type="text" placeholder="Cognome" class="login__input" required name="cognome">
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx  bx-fingerprint login__icon'></i>
+                            <input type="text" placeholder="Codice Fiscale" class="login__input" required name="cf">
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bx-world login__icon'></i>
+                            <input type="text" placeholder="Nazione" class="login__input" required name="nazione">
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bxs-city login__icon'></i>
+                            <input type="text" placeholder="Città" class="login__input" required name="città">
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bxs-compass login__icon'></i>
+                            <input type="text" placeholder="Provincia" class="login__input" required name="provincia">
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bx-home login__icon'></i>
+                            <input type="text" placeholder="Via e numero civico" class="login__input" required name="via">
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bx-user-circle login__icon'></i>
+                            <select required name="ruolo" class="login__input">
+                                <option value="">Scegliere il ruolo</option>
+                                <option value="dirigenza">Dirigenza</option>
+                                <option value="segretaria">Segretaria</option>
+                                <option value="insegnanti">Insegnanti</option>
+                                <option value="resposanbile">Responsabile Covid</option>
+                                <option value="amministrazione">Amministrazione</option>
+                            </select>
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bxs-phone login__icon'></i>
+                            <input type="text" placeholder="Telefono" class="login__input" required name="telefono">
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bx-at login__icon'></i>
+                            <input type="text" placeholder="Email" class="login__input" required name="email" >
+                        </div>
+
+                        <div class="login__box">
+                            <i class='bx bx-lock-alt login__icon'></i>
+                            <input type="password" placeholder="Password" class="login__input" required name="password">
+                        </div>
+
+                    </div>
+
+                    <div align="center">
+                        <input type="submit" class="login__button" value="Registrati">
+                    </div>
+
+                    <div>
+                        <span class="login__account">Possiedi un account ?</span>
+                        <br>
+                        <span class="login__signup" id="sign-in">Ritorna al Login</span>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
